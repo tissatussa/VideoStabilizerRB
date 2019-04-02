@@ -1,0 +1,152 @@
+0.000 *** START: Tue Apr  2 20:56:08 2019
+
+************************************************
+**  Pass 1 of 2 : create TRF file
+************************************************
+
+0.023 *** Input #0, avi, from '/home/roelof/git/VideoStabilizerRB/src/example_videos/cv2.avi':
+0.029 *** Metadata:
+0.029 *** encoder         : Lavf57.71.100
+0.029 *** Duration: 00:00:05.18, start: 0.000000, bitrate: 4550 kb/s
+0.029 *** Stream #0:0: Video: h264 (High) (H264 / 0x34363248), yuv420p(tv, bt709/unknown/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4404 kb/s, 50 fps, 50 tbr, 50 tbn, 100 tbc
+0.030 *** Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 44100 Hz, stereo, fltp, 128 kb/s
+0.030 *** Stream mapping:
+0.030 *** Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+0.030 *** Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+0.030 *** Press [q] to stop, [?] for help
+0.041 *** [vidstabdetect @ 0x7ffced2a9df0] Fieldsize: 80, Maximal translation: 102 pixel
+0.041 *** [vidstabdetect @ 0x7ffced2a9df0] Number of used measurement fields: 60 out of 60
+0.041 *** [vidstabdetect @ 0x7ffced2a9df0] Fieldsize: 16, Maximal translation: 16 pixel
+0.041 *** [vidstabdetect @ 0x7ffced2a9df0] Number of used measurement fields: 760 out of 760
+0.042 *** [Parsed_vidstabdetect_0 @ 0x69fbd00] Video stabilization settings (pass 1/2):
+0.042 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]      shakiness = 5
+0.042 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]       accuracy = 15
+0.042 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]       stepsize = 6
+0.042 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]    mincontrast = 0.250000
+0.043 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]         tripod = 0
+0.043 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]           show = 0
+0.043 *** [Parsed_vidstabdetect_0 @ 0x69fbd00]         result = ./output/cv2.avi.transforms.trf
+0.051 *** Output #0, null, to 'pipe:':
+0.051 *** Metadata:
+0.051 *** encoder         : Lavf58.26.100
+0.051 *** Stream #0:0: Video: wrapped_avframe, yuv420p, 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 50 fps, 50 tbn, 50 tbc
+0.051 *** Metadata:
+0.051 *** encoder         : Lavc58.46.100 wrapped_avframe
+0.052 *** Stream #0:1: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s
+0.052 *** Metadata:
+0.052 *** encoder         : Lavc58.46.100 pcm_s16le
+2.819 *** video:135kB audio:892kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+2.819 *** 
+************************************************
+**  Pass 2 of 2 : stabilize video
+************************************************
+
+2.830 *** Input #0, avi, from '/home/roelof/git/VideoStabilizerRB/src/example_videos/cv2.avi':
+2.840 *** Metadata:
+2.840 *** encoder         : Lavf57.71.100
+2.840 *** Duration: 00:00:05.18, start: 0.000000, bitrate: 4550 kb/s
+2.840 *** Stream #0:0: Video: h264 (High) (H264 / 0x34363248), yuv420p(tv, bt709/unknown/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4404 kb/s, 50 fps, 50 tbr, 50 tbn, 100 tbc
+2.840 *** Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 44100 Hz, stereo, fltp, 128 kb/s
+2.840 *** Stream mapping:
+2.840 *** Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+2.840 *** Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+2.840 *** Press [q] to stop, [?] for help
+2.851 *** [Parsed_vidstabtransform_0 @ 0x6b65140] Video transformation/stabilization settings (pass 2/2):
+2.851 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     input     = ./output/cv2.avi.transforms.trf
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     smoothing = 15
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     optalgo   = gauss
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     maxshift  = -1
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     maxangle  = -1.000000
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     crop      = Keep
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     relative  = True
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     invert    = False
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     zoom      = 0.000000
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     optzoom   = Static (1)
+2.852 *** [Parsed_vidstabtransform_0 @ 0x6b65140]     interpol  = Bi-Linear (2)
+2.892 *** [vidstabtransform @ 0x7ffcc45d2470] Final zoom: 2.410808
+2.919 *** [libx264 @ 0x6aa0400] using SAR=1/1
+2.919 *** [libx264 @ 0x6aa0400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+2.928 *** [libx264 @ 0x6aa0400] profile High, level 3.2, 4:2:0, 8-bit
+2.932 *** [libx264 @ 0x6aa0400] 264 - core 157 r2935 545de2f - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+2.932 *** Output #0, mp4, to './output/cv2.avi.stable.mp4':
+2.932 *** Metadata:
+2.932 *** encoder         : Lavf58.26.100
+2.932 *** Stream #0:0: Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], q=-1--1, 50 fps, 12800 tbn, 50 tbc
+2.932 *** Metadata:
+2.932 *** encoder         : Lavc58.46.100 libx264
+2.932 *** Side data:
+2.932 *** cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+2.932 *** Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s
+2.932 *** Metadata:
+2.932 *** encoder         : Lavc58.46.100 aac
+14.719 *** video:791kB audio:84kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.900458%
+14.719 *** [libx264 @ 0x6aa0400] frame I:2     Avg QP:21.08  size: 15858
+14.719 *** [libx264 @ 0x6aa0400] frame P:66    Avg QP:24.26  size:  6119
+14.719 *** [libx264 @ 0x6aa0400] frame B:193   Avg QP:25.77  size:  1939
+14.719 *** [libx264 @ 0x6aa0400] consecutive B-frames:  0.8%  1.5%  1.1% 96.6%
+14.719 *** [libx264 @ 0x6aa0400] mb I  I16..4: 28.2% 66.7%  5.2%
+14.719 *** [libx264 @ 0x6aa0400] mb P  I16..4:  9.2%  5.0%  0.1%  P16..4: 42.4%  4.4%  1.9%  0.0%  0.0%    skip:37.0%
+14.719 *** [libx264 @ 0x6aa0400] mb B  I16..4:  1.2%  0.1%  0.0%  B16..8: 32.2%  0.9%  0.0%  direct: 0.1%  skip:65.5%  L0:46.4% L1:52.5% BI: 1.1%
+14.724 *** [libx264 @ 0x6aa0400] 8x8 transform intra:34.2% inter:96.8%
+14.724 *** [libx264 @ 0x6aa0400] coded y,uvDC,uvAC intra: 11.3% 29.2% 2.0% inter: 3.4% 7.6% 0.0%
+14.724 *** [libx264 @ 0x6aa0400] i16 v,h,dc,p: 25% 51%  6% 18%
+14.724 *** [libx264 @ 0x6aa0400] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 19% 47%  2%  3%  3%  3%  1%  2%
+14.724 *** [libx264 @ 0x6aa0400] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 24% 27%  2%  3%  3%  2%  2%  1%
+14.724 *** [libx264 @ 0x6aa0400] i8c dc,h,v,p: 47% 34% 18%  1%
+14.724 *** [libx264 @ 0x6aa0400] Weighted P-Frames: Y:3.0% UV:0.0%
+14.724 *** [libx264 @ 0x6aa0400] ref P L0: 66.0%  3.5% 23.7%  6.6%  0.2%
+14.724 *** [libx264 @ 0x6aa0400] ref B L0: 87.0% 10.6%  2.4%
+14.724 *** [libx264 @ 0x6aa0400] ref B L1: 94.4%  5.6%
+14.724 *** [libx264 @ 0x6aa0400] kb/s:1240.98
+14.725 *** [aac @ 0x6a79ec0] Qavg: 810.556
+14.728 *** 
+************************************************
+**  make duo video
+************************************************
+
+14.739 *** Input #0, avi, from '/home/roelof/git/VideoStabilizerRB/src/example_videos/cv2.avi':
+14.747 *** Metadata:
+14.747 *** encoder         : Lavf57.71.100
+14.747 *** Duration: 00:00:05.18, start: 0.000000, bitrate: 4550 kb/s
+14.747 *** Stream #0:0: Video: h264 (High) (H264 / 0x34363248), yuv420p(tv, bt709/unknown/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 4404 kb/s, 50 fps, 50 tbr, 50 tbn, 100 tbc
+14.747 *** Stream #0:1: Audio: aac (LC) ([255][0][0][0] / 0x00FF), 44100 Hz, stereo, fltp, 128 kb/s
+14.747 *** Stream mapping:
+14.748 *** Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+14.748 *** Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+14.748 *** Press [q] to stop, [?] for help
+14.781 *** [libx264 @ 0x72d4400] using SAR=1/1
+14.781 *** [libx264 @ 0x72d4400] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+14.784 *** [libx264 @ 0x72d4400] profile High, level 4.2, 4:2:0, 8-bit
+14.785 *** [libx264 @ 0x72d4400] 264 - core 157 r2935 545de2f - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+14.785 *** Output #0, mp4, to './output/cv2.avi.duo.mp4':
+14.785 *** Metadata:
+14.785 *** encoder         : Lavf58.26.100
+14.785 *** Stream #0:0: Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 2560x720 [SAR 1:1 DAR 32:9], q=-1--1, 50 fps, 12800 tbn, 50 tbc
+14.785 *** Metadata:
+14.785 *** encoder         : Lavc58.46.100 libx264
+14.785 *** Side data:
+14.785 *** cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+14.786 *** Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s
+14.786 *** Metadata:
+14.786 *** encoder         : Lavc58.46.100 aac
+25.883 *** [Parsed_movie_1 @ 0x7399e40] EOF timestamp not reliable
+27.623 *** video:1544kB audio:84kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.484074%
+27.623 *** [libx264 @ 0x72d4400] frame I:2     Avg QP:20.17  size: 30896
+27.623 *** [libx264 @ 0x72d4400] frame P:81    Avg QP:22.91  size: 11708
+27.623 *** [libx264 @ 0x72d4400] frame B:178   Avg QP:24.77  size:  3206
+27.623 *** [libx264 @ 0x72d4400] consecutive B-frames:  0.8% 24.5%  1.1% 73.6%
+27.623 *** [libx264 @ 0x72d4400] mb I  I16..4: 34.6% 62.4%  3.0%
+27.624 *** [libx264 @ 0x72d4400] mb P  I16..4:  9.8%  7.0%  0.1%  P16..4: 38.9%  3.3%  1.0%  0.0%  0.0%    skip:39.8%
+27.624 *** [libx264 @ 0x72d4400] mb B  I16..4:  0.9%  0.4%  0.0%  B16..8: 27.0%  0.7%  0.0%  direct: 0.2%  skip:70.9%  L0:49.0% L1:50.2% BI: 0.8%
+27.624 *** [libx264 @ 0x72d4400] 8x8 transform intra:42.4% inter:96.9%
+27.624 *** [libx264 @ 0x72d4400] coded y,uvDC,uvAC intra: 13.0% 41.7% 1.6% inter: 2.6% 7.6% 0.0%
+27.624 *** [libx264 @ 0x72d4400] i16 v,h,dc,p: 25% 43% 13% 19%
+27.624 *** [libx264 @ 0x72d4400] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 21% 47%  1%  2%  2%  2%  1%  1%
+27.624 *** [libx264 @ 0x72d4400] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 24% 31%  2%  3%  2%  2%  2%  1%
+27.624 *** [libx264 @ 0x72d4400] i8c dc,h,v,p: 53% 28% 18%  1%
+27.624 *** [libx264 @ 0x72d4400] Weighted P-Frames: Y:1.2% UV:0.0%
+27.624 *** [libx264 @ 0x72d4400] ref P L0: 70.4%  2.6% 21.5%  5.4%  0.0%
+27.624 *** [libx264 @ 0x72d4400] ref B L0: 86.6% 11.6%  1.8%
+27.624 *** [libx264 @ 0x72d4400] ref B L1: 95.8%  4.2%
+27.624 *** [libx264 @ 0x72d4400] kb/s:2422.59
+27.627 *** [aac @ 0x72ae100] Qavg: 810.556

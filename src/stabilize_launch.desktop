@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+StartupNotify=true
+Name[en_US]=Stabilize Video
+Exec=python3 /home/roelof/Apps/Video_Stabilizer_Python/now/stabilize_launch.py
+Path=/home/roelof/Apps/Video_Stabilizer_Python/now/
+Categories=Utility;Application;
+Comment=stabilize any video with ffmpeg and vidstab module
+Icon=/home/roelof/Apps/Video_Stabilizer_Python/now/icon.png
